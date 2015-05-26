@@ -13,7 +13,9 @@ namespace ConsoleApplication2
       
   public Program()
         {
+           
         }
+
 
         // DOWNLOAD
 
@@ -75,7 +77,6 @@ namespace ConsoleApplication2
             // if there is items in the directory download those items
             program.Download("ftp://www.contoso.com/test.htm", "test.htm");
             Console.WriteLine("File Downloaded");
-
 
         }
     }
