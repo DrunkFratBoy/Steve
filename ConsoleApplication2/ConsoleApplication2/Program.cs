@@ -24,7 +24,7 @@ namespace ConsoleApplication2
             request.Method = WebRequestMethods.Ftp.DownloadFile;
 
             // This example assumes the FTP site uses anonymous logon.
-            request.Credentials = new NetworkCredential("gogettergp", "GoGetter13!");
+            request.Credentials = new NetworkCredential("test", "test");
 
             FtpWebResponse response = (FtpWebResponse)request.GetResponse();
 
