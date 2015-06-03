@@ -5,40 +5,38 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<title>Box Buttons</title>
-	<style>	
-		.container {
-			display: flex;
-			flex-wrap: wrap;
-		}
+	<title>Table Box Setup</title>
+	<style>
 		.box {
-				float: left;
-				width: 160px;
-				height: 160px;
-				padding: 20px;
-				border: 10px; 
-				margin: 20px;
-				border-style: solid;
-				border-color: #A9A9A9; 
+			width: 160px;
+			height: 160px;
+			padding: 20px;
+			border: 10px; 
+			margin: 20px;
+			border-style: solid;
+			border-color: #A9A9A9;
 		}
 	</style>
 </head>
 <body>
-
-	<div class="container">	
+	<!-- TABLE FOR BUTTONS -->
+	<table align="center" border="0">
+	<tr>
+	<td>
 		<div class="dropdown">
-		<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Agents</button>
-			<ul class="dropdown-menu" role="menu">
-					
-				<li><a href="#">Normal</a></li>
-				<li><a href="#">Disconnected</a></li>
-				<li><a href="#">Failed</a></li>
-				<li class="divider"></li>
-				<li><a href="#">View All</a></li>
-		</ul>
-		</div>
-		</div>
-		
+			<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Agents</button>
+				<ul class="dropdown-menu" role="menu">
+						
+					<li><a href="#">Normal</a></li>
+					<li><a href="#">Disconnected</a></li>
+					<li><a href="#">Failed</a></li>
+					<li class="divider"></li>
+					<li><a href="#">View All</a></li>
+			</ul>
+			</div>
+			</div>
+	</td>
+	<td>
 		<div class="dropdown">
 		<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Probes</button>
 			<ul class="dropdown-menu" role="menu">
@@ -50,7 +48,8 @@
 		</div>	
 		</ul>
 		</div>
-
+	</td>
+	<td>
 		<div class="dropdown">
 		<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Servers</button>
 			<ul class="dropdown-menu" role="menu">
@@ -62,19 +61,25 @@
 			</ul>
 		</div>
 		</div>
-		
+	</td>
+	</tr>
+	<!-- ROW 2 -->
+	<tr>
+	<td>
 		<div class="dropdown">
-		<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Laptops</button>
-			<ul class="dropdown-menu" role="menu">
-				<li><a href="#">Normal</a></li>
-				<li><a href="#">Disconnected</a></li>
-				<li><a href="#">Failed</a></li>
-				<li class="divider"></li>
-				<li><a href="#">View All</a></li>
+			<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Laptops</button>
+				<ul class="dropdown-menu" role="menu">
+						
+					<li><a href="#">Normal</a></li>
+					<li><a href="#">Disconnected</a></li>
+					<li><a href="#">Failed</a></li>
+					<li class="divider"></li>
+					<li><a href="#">View All</a></li>
 			</ul>
-		</div>
-		</div>
-		
+			</div>
+			</div>
+	</td>
+	<td>
 		<div class="dropdown">
 		<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Storage</button>
 			<ul class="dropdown-menu" role="menu">
@@ -83,10 +88,11 @@
 				<li><a href="#">Failed</a></li>
 				<li class="divider"></li>
 				<li><a href="#">View All</a></li>
-			</ul>
+		</div>	
+		</ul>
 		</div>
-		</div>
-		
+	</td>
+	<td>
 		<div class="dropdown">
 		<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Switches/Routers</button>
 			<ul class="dropdown-menu" role="menu">
@@ -98,19 +104,25 @@
 			</ul>
 		</div>
 		</div>
-
+	</td>
+	</tr>
+	<!-- ROW 3 -->
+	<tr>
+	<td>
 		<div class="dropdown">
-		<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Workstations</button>
-			<ul class="dropdown-menu" role="menu">
-				<li><a href="#">Normal</a></li>
-				<li><a href="#">Disconnected</a></li>
-				<li><a href="#">Failed</a></li>
-				<li class="divider"></li>
-				<li><a href="#">View All</a></li>
+			<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Workstations</button>
+				<ul class="dropdown-menu" role="menu">
+						
+					<li><a href="#">Normal</a></li>
+					<li><a href="#">Disconnected</a></li>
+					<li><a href="#">Failed</a></li>
+					<li class="divider"></li>
+					<li><a href="#">View All</a></li>
 			</ul>
-		</div>
-		</div>
-
+			</div>
+			</div>
+	</td>
+	<td>
 		<div class="dropdown">
 		<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Networks</button>
 			<ul class="dropdown-menu" role="menu">
@@ -119,10 +131,11 @@
 				<li><a href="#">Failed</a></li>
 				<li class="divider"></li>
 				<li><a href="#">View All</a></li>
-			</ul>
+		</div>	
+		</ul>
 		</div>
-		</div>
-
+	</td>
+	<td>
 		<div class="dropdown">
 		<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Other</button>
 			<ul class="dropdown-menu" role="menu">
@@ -134,8 +147,9 @@
 			</ul>
 		</div>
 		</div>
-		
-	</div> 
-	<!-- end of container -->
+	</td>
+	</tr>
+	</table> 
+	<!-- END TABLE -->
 </body>
 </html>
