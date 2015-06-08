@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MCPc - architects of the anyplace workspace</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<style>
+		.carousel{
+			width: 915px;
+		}
+		.carousel-inner > .item > img,
+		.carousel-inner > .item > a > img {
+			margin: auto;
+  		} 
+		.borderline {
+			width: 915px;
+			border: 1px solid #8D8D8E;
+			margin: auto;
+		}			
+			
+		.box {
+			width: 160px;
+			height: 160px;
+			padding: 20px;
+			border: 10px; 
+			margin: 20px;
+			border-style: solid;
+			border-color: #A9A9A9;
+		}
+		.line {
+			width: 914px;
+			height: 23px;
+			background: #404243;
+			border-bottom: 1px solid #C6C6C7;
+			margin: auto;
+		}
+
+	</style>
+
+</head>
+<body>
+<div class="borderline">
+
+<!-- MCPc HEADER -->
+  	<header><img src="mcpc-logo.png" align="left"></header>
+	<br><br><br><br>
+	
+<!-- BASIC NAVIGATION -->
+	<p align="right" style="text-indent:5em;">
+		<a href="#"><font size="4" color="slategray">Home</font></a> 	
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+		<font size="4" color="slategray">|</font> 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+		<a href="#"><font size="4" color="slategray">MCPc</font></a> 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+		<font size="4" color="slategray">|	</font> 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+		<a href="#"><font size="4" color="slategray">ConnectWise</font></a>  
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	</p>
+
+<!-- START CAROUSEL -->
+<div class="carousel">
+<br>
+  	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<a href="http://www.mcpc.com/Main-Blog/Blogs/February-2015/MCPc-Family-Charities-Announces-$9M-Boathouse-Proj.aspx">
+					<img src="teamMCPc.jpeg" alt="TEAM" width="800" height="1000"> 
+				</a>
+			</div>
+
+			<div class="item">
+				<a href="http://www.mcpc.com/Main-Blog/Blogs/November-2014/MCPc-named-to-Crain-s-Cleveland-Business-Fast-50.aspx">
+					<img src="fast50-logo.jpeg" alt="FAST50" width="465" height="490">
+				</a>
+			</div>
+	
+			<div class="item">
+				<a href="http://www.mcpc.com">
+					<img src="mcpc-logo.png" alt="MCPC" width="530" height="605">
+				</a>
+			</div>
+		</div>
+
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+  	</div>
+</div>
+<br>
+<!-- END CAROUSEL -->
+<!-- TABLE FOR BUTTONS -->
+<table align="center" border="0">
+<tr>
+	<td>
+		<div class="dropdown">
+			<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Agents</button>
+				<ul class="dropdown-menu" role="menu">
+						
+					<li><a href="#">Normal</a></li>
+					<li><a href="#">Disconnected</a></li>
+					<li><a href="#">Failed</a></li>
+					<li class="divider"></li>
+					<li><a href="#">View All</a></li>
+			</ul>
+			</div>
+			</div>
+	</td>
+	<td>
+		<div class="dropdown">
+		<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Probes</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">Normal</a></li>
+				<li><a href="#">Disconnected</a></li>
+				<li><a href="#">Failed</a></li>
+				<li class="divider"></li>
+				<li><a href="#">View All</a></li>
+		</div>	
+		</ul>
+		</div>
+	</td>
+	<td>
+		<div class="dropdown">
+		<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Servers</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">Normal</a></li>
+				<li><a href="#">Disconnected</a></li>
+				<li><a href="#">Failed</a></li>
+				<li class="divider"></li>
+				<li><a href="#">View All</a></li>
+			</ul>
+		</div>
+		</div>
+	</td>
+</tr>
+<!-- ROW 2 -->
+<tr>
+	<td>
+		<div class="dropdown">
+			<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Laptops</button>
+				<ul class="dropdown-menu" role="menu">
+						
+					<li><a href="#">Normal</a></li>
+					<li><a href="#">Disconnected</a></li>
+					<li><a href="#">Failed</a></li>
+					<li class="divider"></li>
+					<li><a href="#">View All</a></li>
+			</ul>
+			</div>
+			</div>
+	</td>
+	<td>
+		<div class="dropdown">
+		<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Storage</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">Normal</a></li>
+				<li><a href="#">Disconnected</a></li>
+				<li><a href="#">Failed</a></li>
+				<li class="divider"></li>
+				<li><a href="#">View All</a></li>
+		</div>	
+		</ul>
+		</div>
+	</td>
+	<td>
+		<div class="dropdown">
+		<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Switches/Routers</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">Normal</a></li>
+				<li><a href="#">Disconnected</a></li>
+				<li><a href="#">Failed</a></li>
+				<li class="divider"></li>
+				<li><a href="#">View All</a></li>
+			</ul>
+		</div>
+		</div>
+	</td>
+</tr>
+<!-- ROW 3 -->
+<tr>
+	<td>
+		<div class="dropdown">
+			<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Workstations</button>
+				<ul class="dropdown-menu" role="menu">
+						
+					<li><a href="#">Normal</a></li>
+					<li><a href="#">Disconnected</a></li>
+					<li><a href="#">Failed</a></li>
+					<li class="divider"></li>
+					<li><a href="#">View All</a></li>
+			</ul>
+			</div>
+			</div>
+	</td>
+	<td>
+		<div class="dropdown">
+		<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Networks</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">Normal</a></li>
+				<li><a href="#">Disconnected</a></li>
+				<li><a href="#">Failed</a></li>
+				<li class="divider"></li>
+				<li><a href="#">View All</a></li>
+		</div>	
+		</ul>
+		</div>
+	</td>
+	<td>
+		<div class="dropdown">
+		<button  class="btn btn-default dropdown-toggle" data-toggle="dropdown"><div class="box">Other</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">Normal</a></li>
+				<li><a href="#">Disconnected</a></li>
+				<li><a href="#">Failed</a></li>
+				<li class="divider"></li>
+				<li><a href="#">View All</a></li>
+			</ul>
+		</div>
+		</div>
+	</td>
+</tr>
+</table> 
+<!-- END TABLE -->
+
+<!-- BORDER --> <br><br><br>
+<div class="line"></div>
+	
+	<footer>
+		<div class="copyright">
+			<div class="col-sm-3" style="background-color:black;"><font face="tahoma" size="4" color="firebrick">LEARN MORE</font>
+				<li><a href="http://www.mcpc.com/About.aspx"><font color="white">about</font></li></a>
+				<li><a href="http://www.mcpc.com/Solutions.aspx"><font color="white">solutions</font></li></a>
+				<li><a href="http://www.mcpc.com/Partners.aspx"><font color="white">partners</font></li></a>
+				<li><a href="http://www.mcpc.com/Resources.aspx"><font color="white">resources</font></li></a>
+				<li><a href="http://www.mcpc.com/Careers.aspx"><font color="white">careers</font></li></a>
+				<br><br><br>
+			</div>
+			<div class="col-sm-3" style="background-color:black;"><font face="tahoma" size="4" color="firebrick">DO MORE</font>
+				<li><a href="https://www.mcpconnect.com/MCPC/login.aspx"><font color="white">login to MCPconnect</font></li></a>
+				<li><a href="http://www.mcpc.com/contact-us.aspx"><font color="white">contact us</font></li></a>
+				<br><br><br><br><br><br>
+			</div>
+			<div class="col-sm-3" style="background-color:black;"><font face="tahoma" size="4" color="firebrick">GET MORE</font>
+				<li><a href="http://www.mcpc.com/Solutions/Technologies/Collaboration.aspx"><font color="white">collaboration</font></li></a>
+				<li><a href="http://www.mcpc.com/Solutions/Technologies/Devices.aspx"><font color="white">devices</font></li></a>
+				<li><a href="http://www.mcpc.com/apps.aspx"><font color="white">apps</font></li></a>
+				<li><a href="http://www.mcpc.com/datacenter.aspx"><font color="white">datacenter</font></li></a>
+				<li><a href="http://www.mcpc.com/Solutions/Industries/Network.aspx"><font color="white">network</font></li></a>
+				<li><a href="http://www.mcpc.com/support.aspx"><font color="white">support</font></li></a>
+				<li><a href="http://www.mcpc.com/Solutions/Industries/Cloud.aspx"><font color="white">cloud</font></li></a>
+				<br>
+			</div>
+			<div class="col-sm-3" style="background-color:black;"><font face="tahoma" size="4" color="firebrick">Follow Us</font>
+				<li><a href="https://www.facebook.com/MCPcInc"><font color="white">Facebook</font></li></a>
+				<li><a href="https://www.linkedin.com/company/mcpc"><font color="white">LinkedIn</font></li></a>
+				<li><a href="https://twitter.com/mcpcinc"><font color="white">Twitter</font></li></a>
+				<li><a href="https://www.youtube.com/user/mcpcmktg"><font color="white">YouTube</font></li></a>
+				<br><br><br><br>
+			</div>
+		</div>
+		<div class="copyright" style="background-color:black"><font color="white">Copyright 2015 MCPc Incorporated. All rights reserved.</font>
+		</div>
+		<br>
+	</footer>
+</div> 
+<!-- END BORDER -->
+
+</body>
+</html>
+
