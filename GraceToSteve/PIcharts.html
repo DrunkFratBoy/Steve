@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
- <head>
+<head>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
+</head>
+<body>
+	<script type="text/javascript">
 		google.load("visualization", "1", {packages:["corechart"]});
 		google.setOnLoadCallback(drawChart);
 		function drawChart() {
@@ -13,22 +15,22 @@
 				['Failed', 2],
 			]);
 			var options = {
-				title: 'Agents',
 				slices: {
 					0: {color: '#52CC29'},
 					1: {color: 'yellow',},
 					2: {color: '#FF3300'}
 				},
 				pieSliceTextStyle: {color: 'black'},
-				fontSize: 16,
+				fontSize: 14,
 				fontName: 'Arial',
+				legend: 'none',
+				title: 'Agents',
 			};
-			var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+			var chart = new google.visualization.PieChart(document.getElementById('agents'));
 			chart.draw(data, options);
 		}
     </script>
-</head>
-<body>
-	<div id="piechart" style="width: 900px; height: 500px;"></div>
+	 <div id="agents" style="width: 265px; height: 265px;"></div>
+	 
 </body>
 </html>
