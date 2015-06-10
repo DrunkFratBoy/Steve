@@ -4,3 +4,6 @@ C:\Users\gdamico\Desktop\GraceSteve\ConsoleApplicationGRACE\ConsoleApplicationGR
 C:\Users\gdamico\Desktop\GraceSteve\ConsoleApplicationGRACE\ConsoleApplicationGRACE\obj\Debug\ConsoleApplicationGRACE.exe
 C:\Users\gdamico\Desktop\GraceSteve\ConsoleApplicationGRACE\ConsoleApplicationGRACE\obj\Debug\ConsoleApplicationGRACE.pdb
 C:\Users\gdamico\Desktop\GraceSteve\ConsoleApplicationGRACE\ConsoleApplicationGRACE\obj\Debug\ConsoleApplicationGRACE.csprojResolveAssemblyReference.cache
+C:\Users\gdamico\Desktop\Steve\ConsoleApplicationGRACE\ConsoleApplicationGRACE\bin\Debug\ConsoleApplicationGRACE.exe.config
+C:\Users\gdamico\Desktop\Steve\ConsoleApplicationGRACE\ConsoleApplicationGRACE\obj\Debug\ConsoleApplicationGRACE.exe
+C:\Users\gdamico\Desktop\Steve\ConsoleApplicationGRACE\ConsoleApplicationGRACE\obj\Debug\ConsoleApplicationGRACE.pdb

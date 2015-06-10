@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		google.load("visualization", "1", {packages:["corechart"]});
+		google.setOnLoadCallback(drawChart);
+		function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+				['Status', 'Number of Devices'],
+				['Normal',      8],
+				['Disconnected',  4],
+				['Failed', 2],
+			]);
+			var options = {
+				slices: {
+					0: {color: '#52CC29'},
+					1: {color: 'yellow',},
+					2: {color: '#FF3300'}
+				},
+				pieSliceTextStyle: {color: 'black'},
+				fontSize: 14,
+				fontName: 'Arial',
+				legend: 'none',
+				title: 'Agents',
+			};
+			var chart = new google.visualization.PieChart(document.getElementById('agents'));
+			chart.draw(data, options);
+		}
+    </script>
+	 <div id="agents" style="width: 265px; height: 265px;"></div>
+	 
+</body>
+</html>

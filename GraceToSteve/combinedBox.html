@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Combined Box</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<style>
+		.box {
+			width: 160px;
+			height: 160px;
+			padding: 10px;
+			border: 10px; 
+			margin: 20px;
+			border-style: solid;
+			border-color: #A9A9A9;
+		}
+	</style>
+</head>
+<body>
+	<!-- BUILDS PIE CHART -->
+	<script type="text/javascript">
+		google.load("visualization", "1", {packages:["corechart"]});
+		google.setOnLoadCallback(drawChart);
+		function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+				['Status', 'Number of Devices'],
+				['Normal',      8],
+				['Disconnected',  4],
+				['Failed', 2],
+			]);
+			var options = {
+				slices: {
+					0: {color: '#52CC29'},
+					1: {color: 'yellow',},
+					2: {color: '#FF3300'}
+				},
+				pieSliceTextStyle: {color: 'black'},
+				fontSize: 14,
+				fontName: 'Arial',
+				legend: 'none',
+				title: 'Probes',
+			};
+			var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+			chart.draw(data, options);
+		}
+    </script>
+	
+	<!-- DISPLAYS PIE CHART -->
+	<div id="piechart" style="width: 265px; height: 265px;"></div>
+	
+	<button id="probes" type="button">
+		<div class="box">
+		<b><font size="3"><center>Probes</center></font></b>
+			<font size="3" color="#47D147">
+				Normal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				8</font>	<br>
+			<font size="3" color="#E6B800">
+				Disconnected &nbsp;
+				2</font>	<br>
+			<font size="3" color="#FF4719">
+				Failed &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				4</font>
+			<a href="#"><font size="3"><b>
+				View All &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				14</b></font></a>
+		</div>
+	</button>
+	
+</body>
+</html>	
+
+<!-- 
+<div class="box"></div>
+type="button"
+
+
+
+
+-->

@@ -10,14 +10,14 @@ namespace ConsoleApplicationGRACE
 	    public static void Main()
         {
             // Get the object used to communicate with the server.
-            FtpWebRequest request = (FtpWebRequest)WebRequest.Create("sftp://jdubois@172.16.100.56");
+            FtpWebRequest request = (FtpWebRequest)WebRequest.Create("sftp://172.16.100.56");
             request.Method = WebRequestMethods.Ftp.UploadFile;
             
             // This example assumes the FTP site uses anonymous logon.
             request.Credentials = new NetworkCredential ("test1","test2");
             
             // Copy the contents of the file to the request stream.
-            StreamReader sourceStream = new StreamReader("reportsTEST.txt");
+            StreamReader sourceStream = new StreamReader("reports.txt");
             byte [] fileContents = Encoding.UTF8.GetBytes(sourceStream.ReadToEnd());
             sourceStream.Close();
             request.ContentLength = fileContents.Length;
